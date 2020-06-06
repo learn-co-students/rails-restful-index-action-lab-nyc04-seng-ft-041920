@@ -1,11 +1,5 @@
-<h1> <%= @each_student = @all_students.each do |each_student|
-each_student
-end %> </h1>
-
-
-<p> <%= "helllllllllow"  %> </p>
-
-<!-- <p><% def index %>
-<%= @each_student = Student.find(params[:id]) %>   
-<% end %> </p> -->
-
+<div>
+    <h1> <% @all_students.each do |each_student| %>
+    <%= each_student.to_s %> <br>
+    <% end %> </h1>
+</div>
